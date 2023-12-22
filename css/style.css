@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --w1: #fff;
+    --w2: #DDE6ED;
+    --w3: #9DB2BF;
+    --b1: #000;
+    --b2: #27374D;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--w2);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav * {
+    color: var(--w1);
+}
+
+nav.nav-container {
+    width: 100%;
+    background-color: var(--b2);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 220px;
+}
+
+nav .nav-title {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+nav .gunz-logo {
+    max-width: 50px;
+    max-height: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+.nav-list-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#home * {
+    color: var(--w1);
+}
+
+#home {
+    height: calc(100vh - 80px);
+    background-color: var(--b2);
+    padding: 0 220px;
+    display: flex;
+    gap: 30px;
+}
+
+.jumbotron-img-container {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.jumbotron-img {
+    max-width: 100%;
+    width: 250px;
+    height: 380px;
+    background-color: var(--w2);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.jumbotron-img img {
+    height: min-content;
+    width: 140%;
+}
+
+.jumbotron-paragraf {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}
+
+.jumbotron-paragraf h1 {
+    margin: 30px 0;
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--w2) !important;
+}
+
+.jumbotron-paragraf p:nth-child(1) {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.jumbotron-paragraf p:nth-child(3) {
+    width: 75%;
+    text-align: right;
+    font-weight: 300;
+}
+
+.action-container{
+    margin: 15px 0;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+
+.word {
+    color: var(--w1);
+    font: 700 normal 2.5em 'tahoma';
+    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px var(--b1);
+}

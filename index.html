@@ -4,29 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gunz Portofolio</title>
+    <title>Gunz Portfolio</title>
     <link rel="shortcut icon" href="/img/logo.jpeg" type="image/x-icon" class="gunz-logo">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/skill.css">
+    <link rel="stylesheet" href="/css/project.css">
+    <link rel="stylesheet" href="/css/footer.css">
 </head>
 
 <body>
     <nav class="nav-container">
         <div class="nav-title">
-            <img src="/img/logo.jpeg" alt="Gunz Logo" class="gunz-logo">
+            <img src="/img/logo.jpeg" alt="Gunz Logo" class="gunz-logo" loading="lazy">
             <h1 class="nav-title">Gunz</h1>
         </div>
         <div class="nav-list-container">
-            <a class="nav-item" href="#home">Home</a>
+            <a class="nav-item" href="#about">About</a>
             <a class="nav-item" href="#skill">Skill</a>
             <a class="nav-item" href="#project">Project</a>
         </div>
     </nav>
 
     <main>
-        <section id="home">
+        <section id="about">
             <div class="jumbotron-img-container">
                 <div class="jumbotron-img">
-                    <img src="/img/gunz-transparent.png" alt="Gunz Transparent">
+                    <img src="/img/gunz-transparent.png" alt="Gunz Transparent" loading="lazy">
                 </div>
             </div>
             <div class="jumbotron-paragraf">
@@ -68,9 +71,138 @@
                 </div>
             </div>
         </section>
+
+        <section id="skill">
+            <h1>Programming Skill</h1>
+            <div class="skill-container">
+                <a href="https://www.w3schools.com/html" target="_blank">
+                    <img alt="HTML"
+                        src="data:image/png;base64,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"
+                        loading="lazy">
+                </a>
+                <a href="https://www.w3schools.com/css/default.asp" target="_blank">
+                    <img alt="CSS"
+                        src="data:image/png;base64,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"
+                        loading="lazy">
+                </a>
+                <a href="https://www.w3schools.com/js/default.asp" target="_blank">
+                    <img alt="JavaScript"
+                        src="data:image/png;base64,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"
+                        loading="lazy">
+                </a>
+                <a href="https://laravel.com" target="_blank">
+                    <img alt="Laravel" src="/img/skill/laravel.svg" loading="lazy">
+                </a>
+                <a href="https://codeigniter.com/userguide3" target="_blank">
+                    <img alt="Code Igniter" src="/img/skill/ci-logo.png" loading="lazy">
+                </a>
+                <a href="https://nodejs.org/en" target="_blank">
+                    <img alt="NodeJS" src="/img/skill/nodejs.png" loading="lazy">
+                </a>
+                <a href="https://react.dev" target="_blank">
+                    <img alt="React" src="/img/skill/react.png" loading="lazy">
+                </a>
+                <a href="https://tailwindcss.com" target="_blank">
+                    <img alt="Tailwind" src="/img/skill/tailwind.png" loading="lazy">
+                </a>
+                <a href="https://midtrans.com" target="_blank">
+                    <img alt="Midtrans" src="/img/skill/midtrans.png" loading="lazy">
+                </a>
+                <a href="https://jenkins.io" target="_blank">
+                    <img alt="Jenkins" src="/img/skill/jenkins.png" loading="lazy">
+                </a>
+                <a href="https://kubernetes.io" target="_blank">
+                    <img alt="Kubernetes" src="/img/skill/kubernetes.svg" loading="lazy">
+                </a>
+                <a href="https://www.postman.com/company/press-media" target="_blank">
+                    <img alt="Postman" src="/img/skill/postman.png" loading="lazy">
+                </a>
+            </div>
+
+            <h1>Design Skill</h1>
+            <div class="skill-container">
+                <a href="https://www.adobe.com/products/photoshop.html" target="_blank">
+                    <img alt="Photoshop" src="/img/skill/photoshop.png" loading="lazy">
+                </a>
+                <a href="https://www.figma.com" target="_blank">
+                    <img alt="Figma" src="/img/skill/figma.svg" loading="lazy">
+                </a>
+                <a href="https://spline.design" target="_blank">
+                    <img alt="Spline" src="/img/skill/spline.png" loading="lazy">
+                </a>
+            </div>
+        </section>
+
+        <section id="project">
+            <h1>My Projects</h1>
+            <div class="project-container">
+                <a class="project-item" href="https://ppl.gunz.my.id" target="_blank">
+                    <div class="project-thumb">
+                        <div class="project-image">
+                            <img alt="SoySync" src="/img/project/soysync.png" loading="lazy">
+                        </div>
+                        <div class="project-title">
+                            <div class="project-title-img">
+                                <img src="/img/project/soysync-logo.png" alt="SoySync Logo" loading="lazy">
+                            </div>
+                            <h1>SoySync</h1>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <div class="project-description-img">
+                            <img src="/img/project/soysync-logo.png" alt="SoySync Logo" loading="lazy">
+                        </div>
+                        <p>SoySync is a collaborative website that makes it easier to buy and sell soybeans between soybean farmers and soymilk managers. SoySync provides information on market prices for Indonesian soybean raw materials which can be used to monitor the buying and selling prices of soybeans.</p>
+                    </div>
+                </a>
+                <a class="project-item" href="https://fe-2.gunz.my.id" target="_blank">
+                    <div class="project-thumb">
+                        <div class="project-image">
+                            <img alt="SoySync" src="/img/project/planplan.png" loading="lazy">
+                        </div>
+                        <div class="project-title">
+                            <div class="project-title-img">
+                                <img src="/img/project/planplan-logo.jpg" alt="SoySync Logo" loading="lazy">
+                            </div>
+                            <h1>PlanPlan</h1>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <div class="project-description-img">
+                            <img src="/img/project/planplan-logo.jpg" alt="SoySync Logo" loading="lazy">
+                        </div>
+                        <p>PlanPlan is for planning and managing activities or tasks in daily life. Join now and make your every step towards success more organized and enjoyable.</p>
+                    </div>
+                </a>
+                <a class="project-item" href="https://wirodev.my.id" target="_blank">
+                    <div class="project-thumb">
+                        <div class="project-image">
+                            <img alt="SoySync" src="/img/project/wirodayan.png" loading="lazy">
+                        </div>
+                        <div class="project-title">
+                            <div class="project-title-img">
+                                <img src="/img/project/wirodayan-logo.png" alt="SoySync Logo" loading="lazy">
+                            </div>
+                            <h1>Wirodayan Digital</h1>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <div class="project-description-img">
+                            <img src="/img/project/wirodayan-logo.png" alt="SoySync Logo" loading="lazy">
+                        </div>
+                        <p>Wirodayan Digital is a business that operates in the field of application and website development. With extensive experience in developing applications and websites with a wide reach, Wirodayan Digital has handled projects originating from abroad.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
     </main>
 
+    <footer>
+        <p>@2023 Copyright by Gunz</p>
+    </footer>
+
     <script src="/js/script.js"></script>
+    <script src="/js/slider.js"></script>
 </body>
 
 </html>

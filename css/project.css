@@ -1,0 +1,145 @@
+#project {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: center;
+    gap: 50px;
+    background: var(--b2);
+}
+
+#project>h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--w1);
+}
+
+.project-container h1 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.project-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.project-item {
+    position: relative;
+    width: 35%;
+    min-height: 290px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(100, 100, 100, .25);
+    transition: 0.5s;
+}
+
+.project-thumb{
+    flex-shrink: 0;
+    width: 100%;
+    min-height: 290px;
+    background: var(--w2);
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    z-index: 1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.project-image {
+    height: 250px;
+    width: 250px;
+    background: var(--w1);
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(100, 100, 100, .25);
+}
+
+.project-image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.project-title {
+    width: calc(100% - 250px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.project-title-img {
+    flex-shrink: 0;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--w1);
+    border-radius: 75px;
+    overflow: hidden;
+}
+
+.project-title-img img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.project-title h1 {
+    transition: 0.3s;
+}
+
+.project-description *{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.project-description {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 15px;
+    width: 80%;
+    background: var(--w2);
+    border-radius: 0 10px 0 10px;
+    transition: 0.3s;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    gap: 15px;
+}
+
+.project-description-img{
+    width: 50px;
+    height: 50px;
+    background: var(--w1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.project-description-img img{
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.project-item:hover{
+    left: -10%;
+}
+
+.project-item:hover .project-description{
+    left: 105%;
+}
